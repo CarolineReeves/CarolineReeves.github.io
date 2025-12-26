@@ -6,15 +6,71 @@
   <title>Caroline Reeves</title>
 
   <style>
-    body { font-family: Arial, sans-serif; background:#fafafa; margin:0; padding:40px; color:#111; }
-    .container { max-width: 900px; margin: auto; }
-    h1 { font-size: 52px; margin: 0 0 8px; }
-    .subtitle { font-size: 18px; color:#444; margin: 0 0 28px; }
-    .section { padding: 18px 0; border-top: 1px solid #e6e6e6; }
-    h2 { font-size: 20px; margin: 0 0 10px; }
-    p, li { font-size: 16px; line-height: 1.6; }
-    a { color:#111; text-decoration: underline; }
-    ul { margin: 0; padding-left: 18px; }
+   :root {
+  --bg: #f7f8fc;
+  --card: #ffffff;
+  --text: #1f2933;
+  --muted: #6b7280;
+  --accent: #6366f1; /* soft indigo */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", Arial, sans-serif;
+  background: linear-gradient(180deg, #f7f8fc, #eef1ff);
+  margin: 0;
+  padding: 80px 24px;
+  color: var(--text);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 56px;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--muted);
+  margin-bottom: 36px;
+}
+
+.section {
+  background: var(--card);
+  padding: 28px 32px;
+  border-radius: 18px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 18px;
+}
+
   </style>
 </head>
 
