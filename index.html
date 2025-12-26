@@ -6,103 +6,124 @@
   <title>Caroline Reeves</title>
 
   <style>
-   :root {
-  --bg: #f7f8fc;
-  --card: #ffffff;
-  --text: #1f2933;
-  --muted: #6b7280;
-  --accent: #6366f1; /* soft indigo */
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Inter", Arial, sans-serif;
-  background: linear-gradient(180deg, #f7f8fc, #eef1ff);
+   body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Arial, sans-serif;
   margin: 0;
-  padding: 80px 24px;
-  color: var(--text);
+  color: #111;
+  background: #fff;
 }
 
-.container {
-  max-width: 900px;
-  margin: auto;
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.kicker {
+  margin: 0 0 12px;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #333;
 }
 
 h1 {
-  font-size: 56px;
-  margin-bottom: 6px;
+  margin: 0 0 12px;
+  font-size: 52px;
+  line-height: 1.05;
   letter-spacing: -0.02em;
 }
 
-.subtitle {
-  font-size: 18px;
-  color: var(--muted);
-  margin-bottom: 36px;
-}
-
-.section {
-  background: var(--card);
-  padding: 28px 32px;
-  border-radius: 18px;
-  margin-bottom: 28px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-}
-
-h2 {
-  font-size: 20px;
-  margin-bottom: 12px;
-}
-
-p, li {
-  font-size: 16px;
+.lead {
+  margin: 0 0 14px;
+  font-size: 17px;
   line-height: 1.65;
+  color: #222;
+  max-width: 60ch;
 }
 
-a {
-  color: var(--accent);
+.meta {
+  margin: 0 0 18px;
+  font-size: 15px;
+  color: #333;
+}
+
+.cta-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid #111;
+  border-radius: 999px;
   text-decoration: none;
+  color: #111;
+  font-size: 14px;
   font-weight: 500;
 }
 
-a:hover {
-  text-decoration: underline;
+.btn:hover {
+  background: #111;
+  color: #fff;
 }
 
-ul {
-  padding-left: 18px;
+.hero-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headshot {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid #eee;
 }
 
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Caroline Reeves</h1>
-    <p class="subtitle">Finance & Business Analytics | University of Tennessee, Knoxville</p>
+  <div class="page">
+  <section class="hero">
+    <div class="hero-left">
+      <p class="kicker">Finance · Analytics · Leadership</p>
 
-    <div class="section">
-      <h2>About</h2>
-      <p>
-        I’m an undergraduate at UTK studying Finance & Business Analytics with an International Business collateral.
-        I’m interested in financial modeling, data analytics, and building practical tools and websites.
+      <h1>Caroline Reeves</h1>
+
+      <p class="lead">
+        Finance & Business Analytics student who enjoys using data to improve decisions, experiences, and outcomes —
+        from financial modeling to practical analytics projects.
       </p>
-    </div>
 
-    <div class="section">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Portfolio Optimization:</strong> Mean-variance optimization + CAPM expected returns (Excel/Solver)</li>
-        <li><strong>Black-Scholes Calculator:</strong> Dividend-paying option pricing model (Excel)</li>
-        <li><strong>Studio JC:</strong> Building and hosting lightweight business websites (GitHub Pages)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Contact</h2>
-      <p>
-        <a href="mailto:cereeves20@gmail.com">cereeves20@gmail.com</a> ·
-        <a href="https://www.linkedin.com/in/reevescaroline/" target="_blank" rel="noopener">LinkedIn</a>
+      <p class="meta">
+        Haslam College of Business · UT Knoxville · GPA 3.88
       </p>
+
+      <div class="cta-row">
+        <a class="btn" href="Caroline_Reeves_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">Featured Project</a>
+        <a class="btn" href="https://www.linkedin.com/in/reevescaroline/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
+
+    <div class="hero-right">
+      <img class="headshot" src="" alt="Headshot of Caroline Reeves" />
+    </div>
+  </section>
+ 
+</div>
+
   </div>
 </body>
 </html>
