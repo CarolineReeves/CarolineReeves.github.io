@@ -197,7 +197,51 @@ h1 {
 
   </style>
 </head>
-<script>
+ 
+<body>
+  <div class="page">
+  <section class="hero">
+    <div class="hero-left">
+      <p class="kicker">Finance · Analytics · Leadership</p>
+
+      <h1>Caroline Reeves</h1>
+
+      <p class="lead">
+        Finance & Business Analytics student who enjoys using data to improve decisions, experiences, and outcomes —
+        from financial modeling to practical analytics projects.
+      </p>
+
+      <p class="meta">
+        Haslam College of Business · UT Knoxville · GPA 3.88
+      </p>
+
+      <div class="cta-row">
+        <a class="btn" href="Reeves,Caroline Resume Dec2025.pdf" target="_blank" rel="noopener">View Resume</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">Featured Project</a>
+        <a class="btn" href="https://www.linkedin.com/in/reevescaroline/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img class="headshot" src="Caroline Reeves.jpeg" alt="Headshot of Caroline Reeves" />
+    </div>
+  </section>
+   <section class="projects">
+  <h2>Selected Projects</h2>
+
+  <div class="carousel">
+    <button class="arrow" id="prevProj" aria-label="Previous project">‹</button>
+
+    <article class="project-card" id="projectCard">
+      <!-- JS will inject content here -->
+    </article>
+
+    <button class="arrow" id="nextProj" aria-label="Next project">›</button>
+  </div>
+</section>
+
+  </div>
+ <script>
   // Update these projects (titles/descriptions are safe—no raw Excel file needed)
   const projects = [
     {
@@ -260,82 +304,6 @@ h1 {
   renderProject(idx);
 </script>
 
-<body>
-  <div class="page">
-  <section class="hero">
-    <div class="hero-left">
-      <p class="kicker">Finance · Analytics · Leadership</p>
-
-      <h1>Caroline Reeves</h1>
-
-      <p class="lead">
-        Finance & Business Analytics student who enjoys using data to improve decisions, experiences, and outcomes —
-        from financial modeling to practical analytics projects.
-      </p>
-
-      <p class="meta">
-        Haslam College of Business · UT Knoxville · GPA 3.88
-      </p>
-
-      <div class="cta-row">
-        <a class="btn" href="Reeves,Caroline Resume Dec2025.pdf" target="_blank" rel="noopener">View Resume</a>
-        <a class="btn" href="#" target="_blank" rel="noopener">Featured Project</a>
-        <a class="btn" href="https://www.linkedin.com/in/reevescaroline/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-
-    <div class="hero-right">
-      <img class="headshot" src="Caroline Reeves.jpeg" alt="Headshot of Caroline Reeves" />
-    </div>
-  </section>
-   <section class="projects">
-  <h2>Selected Projects</h2>
-
-  <div class="carousel">
-    <button class="arrow" id="prevProj" aria-label="Previous project">‹</button>
-
-    <article class="project-card" id="projectCard">
-      <!-- JS will inject content here -->
-    </article>
-
-    <button class="arrow" id="nextProj" aria-label="Next project">›</button>
-  </div>
-</section>
-
- <section class="projects">
-  <h2>Selected Projects</h2>
-
-  <div class="project">
-    <h3>Portfolio Optimization (Excel)</h3>
-    <p>
-      Built a mean-variance optimization model using historical returns and CAPM expected returns
-      to identify optimal portfolio allocations under varying risk constraints.
-    </p>
-    <p class="tools">Tools: Excel, Solver, CAPM</p>
-  </div>
-
-  <div class="project">
-    <h3>Black-Scholes Option Pricing</h3>
-    <p>
-      Developed a dividend-paying option pricing model with implied volatility estimation
-      using real market data.
-    </p>
-    <p class="tools">Tools: Excel, Black-Scholes</p>
-  </div>
-
-  <div class="project">
-    <h3>Studio JC</h3>
-    <p>
-      Co-founding a lightweight web design studio focused on fast, secure, custom-coded websites
-      for small businesses.
-    </p>
-    <p class="tools">Tools: HTML, CSS, GitHub Pages</p>
-  </div>
-</section>
-
-</div>
-
-  </div>
 </body>
 </html>
 
