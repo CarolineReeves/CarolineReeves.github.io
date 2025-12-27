@@ -280,9 +280,31 @@ body {
 }
 .hero { margin-bottom: 24px; }
 
-.two-col { margin-top: 24px; }
+.two-col { margin-top: 16px; }
 
-.vision { margin-top: 24px; }
+.vision { margin-top: 16px; }
+   :root { --accent: #3b82f6; } /* soft blue */
+
+.kicker { color: #4b5563; }
+a, .btn { border-color: #111; }
+
+.btn {
+  background: #fff;
+}
+
+.btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* chips: subtle tint instead of harsh black */
+.chip {
+  border-color: #d1d5db;
+  background: #f9fafb;
+  color: #111;
+}
+
 
   </style>
 </head>
