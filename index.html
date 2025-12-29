@@ -372,25 +372,8 @@ img {
 
   /* Common hero / header spacing */
   .hero { padding-top: 24px; padding-bottom: 24px; }
-}
-@media (max-width: 768px) {
 
-  /* Hero card layout */
-  .hero {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
-
-  /* Headshot container */
-  .hero img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    object-position: 55% 30%;
-    border-radius: 16px;
-    margin-bottom: 1rem;
-  }
+ 
 }
 /* ================================
    MOBILE TAP FIXES (CRITICAL)
@@ -420,21 +403,21 @@ img {
     padding: 1.25rem;
   }
 }
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .hero {
-    grid-template-columns: 1fr;   /* stack text and image */
+    grid-template-columns: 1fr;
     gap: 18px;
   }
 
   .hero-right {
-    justify-content: center;      /* center the image row */
+    justify-content: center;
   }
 
   .headshot {
     width: 220px;
     height: 220px;
-    object-fit: cover;
-    object-position: 50% 45%;     /* tweak this */
+    margin: 0 auto 16px auto;
+    /* DO NOT set object-position here */
   }
 }
 @media (max-width: 768px) {
@@ -521,15 +504,17 @@ img {
     <section class="projects card section-pad">
   <h2>Selected Work</h2>
 
-  <div class="carousel">
+   <div class="carousel">
+  <article class="project-card" id="projectCard">
+    <!-- JS will inject content here -->
+  </article>
+
+  <div class="carousel-controls">
     <button class="arrow" id="prevProj" aria-label="Previous project">‹</button>
-
-    <article class="project-card" id="projectCard">
-      <!-- JS will inject content here -->
-    </article>
-
     <button class="arrow" id="nextProj" aria-label="Next project">›</button>
   </div>
+</div>
+
 </section>
      
     <section class="vision card section-pad">
