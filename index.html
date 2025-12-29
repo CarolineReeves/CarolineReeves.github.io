@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caroline Reeves</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
 
   <style>
    body {
@@ -196,10 +196,11 @@ h1 {
 
 .project-links a:hover { background: #111; color: #fff; }
 
-@media (max-width: 720px) {
-  .carousel { grid-template-columns: 1fr; }
-  .arrow { display: none; }
+ @media (max-width: 720px) {
+  .carousel { grid-template-columns: 44px 1fr 44px; }
+  .arrow { display: inline-flex; justify-content: center; align-items: center; }
 }
+
     /* Two-column layout: Projects left, Skills right */
 .two-col {
   display: grid;
@@ -417,6 +418,23 @@ img {
 @media (max-width: 768px) {
   .project-card {
     padding: 1.25rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;   /* stack text and image */
+    gap: 18px;
+  }
+
+  .hero-right {
+    justify-content: center;      /* center the image row */
+  }
+
+  .headshot {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: 55% 30%;     /* tweak this */
   }
 }
 
