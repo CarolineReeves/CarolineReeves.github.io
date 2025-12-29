@@ -125,12 +125,18 @@ h1 {
  
 .projects h2 { font-size: 22px; margin: 0 0 18px; }
 
-.carousel {
-  display: grid;
-  grid-template-columns: 44px 1fr 44px;
+ .carousel {
+  display: flex;
+  flex-direction: column;
   gap: 14px;
-  align-items: center;
 }
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
 
 .arrow {
   width: 44px;
