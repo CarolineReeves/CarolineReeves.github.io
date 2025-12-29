@@ -147,6 +147,11 @@ h1 {
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
   background: #fff;
 }
+.project-card a {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
 
 .project-tags {
   font-size: 13px;
@@ -366,6 +371,53 @@ img {
 
   /* Common hero / header spacing */
   .hero { padding-top: 24px; padding-bottom: 24px; }
+}
+@media (max-width: 768px) {
+
+  /* Hero card layout */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  /* Headshot container */
+  .hero img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: 55% 30%;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+  }
+}
+/* ================================
+   MOBILE TAP FIXES (CRITICAL)
+   ================================ */
+
+/* Prevent invisible overlays from blocking taps */
+.project-card::before,
+.project-card::after,
+.hero::before,
+.hero::after {
+  pointer-events: none;
+}
+
+/* Ensure projects sit above other layers */
+#projects,
+.projects {
+  position: relative;
+  z-index: 5;
+}
+
+/* Safari / iOS click bug fix */
+.project-card {
+  transform: none !important;
+}
+@media (max-width: 768px) {
+  .project-card {
+    padding: 1.25rem;
+  }
 }
 
   </style>
